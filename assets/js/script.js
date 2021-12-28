@@ -1,6 +1,3 @@
-// Assignment code here
-
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
@@ -15,3 +12,20 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+//Add special characters here//
+const specialCharacters = "!@#$%^&*()";
+
+//Function for password generator//
+
+//Minimum standards//
+
+//Random character array//
+
+//Input verification//
+
+//Loops//
+
+//Remaining callbacks from above//
+
+//Endgame-run//
