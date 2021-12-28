@@ -49,6 +49,18 @@ var inputArray = {
 };
 
 //Input verification//
+if (numbers === true) {
+
+}
+if (upperCases === true) {
+
+}
+if (lowerCases === true) {
+
+}
+if (specials === true) {
+  
+}
 
 //Loops//
 
