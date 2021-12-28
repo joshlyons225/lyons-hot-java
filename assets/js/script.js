@@ -16,10 +16,10 @@ generateBtn.addEventListener("click", writePassword);
 //Function for password generator//
 function generatePassword() {
   var passwordLength = window.prompt("Enter the desired number of characters; passwords must be at least 8 characters.");
-  var numbers = window.prompt ("Would you care to utilize numbers?");
-  var upperCases = window.prompt("Would you care to utilize uppercase letters?");
-  var lowerCases = window.prompt("Would you care to utilize lowercase letters?");
-  var specials = window.prompt("Would you care to utilize special characters?");
+  var numbers = window.confirm ("Would you care to utilize numbers?");
+  var upperCases = window.confirm("Would you care to utilize uppercase letters?");
+  var lowerCases = window.confirm("Would you care to utilize lowercase letters?");
+  var specials = window.confirm("Would you care to utilize special characters?");
 
 //Add special characters here//
 const specialCharacters = "!@#$%^&*()";
@@ -34,22 +34,22 @@ var minimumSpecialCharacters = "";
 //Random character array//
 var inputArray = {
   getNumbers: function() {
-    String.fromCharCode(Math.floor(Math.random() * 10 + 48));
+    return String.fromCharCode(Math.floor(Math.random() * 10 + 48));
   },
   getUpperCases: function() {
-    String.fromCharCode(Math.floor(Math.random() * 26 + 97));
+    return String.fromCharCode(Math.floor(Math.random() * 26 + 97));
   },
   getLowerCases: function() {
-    String.fromCharCode(Math.floor(Math.random * 26 + 65));
+    return String.fromCharCode(Math.floor(Math.random * 26 + 65));
   },
   getSpecialCharacters: function() {
-    specialCharacters[Math.floor(Math.random() * specialCharacters.length)]
+    return specialCharacters[Math.floor(Math.random() * specialCharacters.length)]
   }
 };
 
 //Input verification//
 if (numbers === true) {
-  minimumNumbers = inputArray.getNumbers();
+  minimumNumbers = functionArray.getNumbers();
   minimumCount++;
 }
 if (upperCases === true) {
