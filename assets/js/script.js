@@ -67,8 +67,13 @@ if (specials === true) {
 }
 
 //Loops//
+var passwordSuccess = "";
+for (let i = 0; i < (parseInt(passwordLength) - minimumCount); i++) {
+  var anyNumber = Math.floor(Math.random() * 4);
+  passwordSuccess = anyNumber;
+}
 
 //Remaining callbacks from above//
 
 //Endgame-run//
-writePassword();
+passwordSuccess();
