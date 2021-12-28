@@ -17,6 +17,13 @@ generateBtn.addEventListener("click", writePassword);
 const specialCharacters = "!@#$%^&*()";
 
 //Function for password generator//
+function generatePassword() {
+  var passwordLength = window.prompt("");
+  var numbers = window.prompt ("");
+  var upperCases = window.prompt("");
+  var lowerCases = window.prompt("");
+  var specials = window.prompt("");
+}
 
 //Minimum standards//
 
