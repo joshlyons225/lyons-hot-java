@@ -26,6 +26,11 @@ function generatePassword() {
 const specialCharacters = "!@#$%^&*()";
 
 //Minimum standards//
+var minimumCount = 8;
+var minimumNumbers = "";
+var minimumUpperCases = "";
+var minimumLowerCases = "";
+var minimumSpecialCharacters = "";
 
 //Random character array//
 
