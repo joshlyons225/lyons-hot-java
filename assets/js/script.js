@@ -50,16 +50,20 @@ var inputArray = {
 
 //Input verification//
 if (numbers === true) {
-
+  minimumNumbers = inputArray.getNumbers();
+  minimumCount++;
 }
 if (upperCases === true) {
-
+  minimumUpperCases = inputArray.getUpperCases();
+  minimumCount++;
 }
 if (lowerCases === true) {
-
+  minimumLowerCases = inputArray.getLowerCases();
+  minimumCount++;
 }
 if (specials === true) {
-  
+  minimumSpecialCharacters = inputArray.getSpecialCharacters();
+  minimumCount++;
 }
 
 //Loops//
@@ -67,3 +71,4 @@ if (specials === true) {
 //Remaining callbacks from above//
 
 //Endgame-run//
+writePassword();
