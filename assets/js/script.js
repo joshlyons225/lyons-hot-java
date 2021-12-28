@@ -20,7 +20,6 @@ function generatePassword() {
   var upperCases = window.prompt("Would you care to utilize uppercase letters?");
   var lowerCases = window.prompt("Would you care to utilize lowercase letters?");
   var specials = window.prompt("Would you care to utilize special characters?");
-}
 
 //Add special characters here//
 const specialCharacters = "!@#$%^&*()";
@@ -82,3 +81,4 @@ passwordSuccess += minimumSpecialCharacters;
 
 //Endgame-run//
 passwordSuccess();
+}
