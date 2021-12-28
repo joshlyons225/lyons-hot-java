@@ -49,7 +49,7 @@ var inputArray = {
 
 //Input verification//
 if (numbers === true) {
-  minimumNumbers = functionArray.getNumbers();
+  minimumNumbers = inputArray.getNumbers();
   minimumCount++;
 }
 if (upperCases === true) {
