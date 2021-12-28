@@ -13,17 +13,17 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-//Add special characters here//
-const specialCharacters = "!@#$%^&*()";
-
 //Function for password generator//
 function generatePassword() {
-  var passwordLength = window.prompt("");
-  var numbers = window.prompt ("");
-  var upperCases = window.prompt("");
-  var lowerCases = window.prompt("");
-  var specials = window.prompt("");
+  var passwordLength = window.prompt("Enter the desired number of characters; passwords must be at least 8 characters.");
+  var numbers = window.prompt ("Would you care to utilize numbers?");
+  var upperCases = window.prompt("Would you care to utilize uppercase letters?");
+  var lowerCases = window.prompt("Would you care to utilize lowercase letters?");
+  var specials = window.prompt("Would you care to utilize special characters?");
 }
+
+//Add special characters here//
+const specialCharacters = "!@#$%^&*()";
 
 //Minimum standards//
 
