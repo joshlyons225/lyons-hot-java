@@ -33,6 +33,20 @@ var minimumLowerCases = "";
 var minimumSpecialCharacters = "";
 
 //Random character array//
+var inputArray = {
+  getNumbers: function() {
+    String.fromCharCode(Math.floor(Math.random() * 10 + 48));
+  },
+  getUpperCases: function() {
+    String.fromCharCode(Math.floor(Math.random() * 26 + 97));
+  },
+  getLowerCases: function() {
+    String.fromCharCode(Math.floor(Math.random * 26 + 65));
+  },
+  getSpecialCharacters: function() {
+    specialCharacters[Math.floor(Math.random() * specialCharacters.length)]
+  }
+};
 
 //Input verification//
 
