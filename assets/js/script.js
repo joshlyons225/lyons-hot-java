@@ -70,10 +70,15 @@ if (specials === true) {
 var passwordSuccess = "";
 for (let i = 0; i < (parseInt(passwordLength) - minimumCount); i++) {
   var anyNumber = Math.floor(Math.random() * 4);
-  passwordSuccess = anyNumber;
+  passwordSuccess += anyNumber;
 }
 
 //Remaining callbacks from above//
+passwordSuccess += minimumNumbers;
+passwordSuccess += minimumUpperCases;
+passwordSuccess += minimumLowerCases;
+passwordSuccess += minimumSpecialCharacters;
+
 
 //Endgame-run//
 passwordSuccess();
