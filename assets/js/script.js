@@ -25,7 +25,7 @@ function generatePassword() {
 const specialCharacters = "!@#$%^&*()";
 
 //Minimum standards//
-var minimumCount = 8;
+var minimumCount = 0;
 var minimumNumbers = "";
 var minimumUpperCases = "";
 var minimumLowerCases = "";
@@ -80,5 +80,5 @@ passwordSuccess += minimumSpecialCharacters;
 
 
 //Endgame-run//
-passwordSuccess;
+return passwordSuccess;
 }
