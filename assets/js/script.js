@@ -20,11 +20,16 @@ function generatePassword() {
       window.alert("Passwords must be at least 8 characters.");
       return;
   } else {
+    if (passwordLength > 129) {
+      window.alert("Passwords must be fewer than 129 characters.");
+      return;
+  } else {
   
   var numbers = window.confirm ("Would you care to utilize numbers?");
   var upperCases = window.confirm("Would you care to utilize uppercase letters?");
   var lowerCases = window.confirm("Would you care to utilize lowercase letters?");
   var specials = window.confirm("Would you care to utilize special characters?");
+  }
   }
 
 //Add special characters here//
