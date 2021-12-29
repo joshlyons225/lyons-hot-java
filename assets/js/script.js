@@ -25,7 +25,7 @@ function generatePassword() {
       return;
   } else {
   
-  var numbers = window.confirm ("Would you care to utilize numbers?");
+  var numbers = window.confirm("Would you care to utilize numbers?");
   var upperCases = window.confirm("Would you care to utilize uppercase letters?");
   var lowerCases = window.confirm("Would you care to utilize lowercase letters?");
   var specials = window.confirm("Would you care to utilize special characters?");
