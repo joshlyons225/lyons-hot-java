@@ -16,10 +16,16 @@ generateBtn.addEventListener("click", writePassword);
 //Function for password generator//
 function generatePassword() {
   var passwordLength = window.prompt("Enter the desired number of characters; passwords must be at least 8 characters.");
+    if (passwordLength < 8) {
+      window.alert("Passwords must be at least 8 characters.");
+      return;
+  } else {
+  
   var numbers = window.confirm ("Would you care to utilize numbers?");
   var upperCases = window.confirm("Would you care to utilize uppercase letters?");
   var lowerCases = window.confirm("Would you care to utilize lowercase letters?");
   var specials = window.confirm("Would you care to utilize special characters?");
+  }
 
 //Add special characters here//
 const specialCharacters = "!@#$%^&*()";
