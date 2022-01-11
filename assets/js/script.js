@@ -20,7 +20,7 @@ function generatePassword() {
       window.alert("Passwords must be at least 8 characters.");
       return;
   } else {
-    if (passwordLength > 129) {
+    if (passwordLength > 128) {
       window.alert("Passwords must be fewer than 129 characters.");
       return;
   } else {
@@ -38,8 +38,8 @@ const specialCharacters = "!@#$%^&*()";
 //Minimum standards//
 var minimumCount = 0;
 var minimumNumbers = "";
-var minimumUpperCases = "";
 var minimumLowerCases = "";
+var minimumUpperCases = "";
 var minimumSpecialCharacters = "";
 
 //Random character array//
@@ -47,10 +47,10 @@ var inputArray = {
   getNumbers: function () {
     return String.fromCharCode(Math.floor(Math.random() * 10 + 48));
   },
-  getUpperCases: function () {
+  getLowerCases: function () {
     return String.fromCharCode(Math.floor(Math.random() * 26 + 97));
   },
-  getLowerCases: function () {
+  getUpperCases: function () {
     return String.fromCharCode(Math.floor(Math.random() * 26 + 65));
   },
   getSpecialCharacters: function () {
@@ -64,11 +64,11 @@ if (numbers === true) {
   minimumCount++;
 }
 if (upperCases === true) {
-  minimumUpperCases = inputArray.getUpperCases();
+  minimumLowerCases = inputArray.getUpperCases();
   minimumCount++;
 }
 if (lowerCases === true) {
-  minimumLowerCases = inputArray.getLowerCases();
+  minimumUpperCases = inputArray.getLowerCases();
   minimumCount++;
 }
 if (specials === true) {
@@ -85,8 +85,8 @@ for (let i = 0; i < (parseInt(passwordLength) - minimumCount); i++) {
 
 //Remaining callbacks from above//
 passwordSuccess += minimumNumbers;
-passwordSuccess += minimumUpperCases;
 passwordSuccess += minimumLowerCases;
+passwordSuccess += minimumUpperCases;
 passwordSuccess += minimumSpecialCharacters;
 
 
